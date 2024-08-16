@@ -24,7 +24,7 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    if (query === null) return;
+    if (!query.trim()) return;
 
     async function fetchImages() {
       try {
